@@ -1,0 +1,29 @@
+{
+  "name": "nullthrows-ts",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "author": "Harry Truong <harry.truong@airbnb.com>",
+  "license": "MIT",
+  "scripts": {
+    "prepublish": "tsc",
+    "test": "jest"
+  },
+  "dependencies": {
+    "typescript": "^3.5.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.15",
+    "chai": "^4.2.0",
+    "idx": "^2.5.6",
+    "jest": "^24.8.0",
+    "ts-jest": "^24.0.2"
+  },
+  "jest": {
+    "roots": [
+      "<rootDir>/src"
+    ],
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    }
+  }
+}
